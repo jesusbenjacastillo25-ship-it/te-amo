@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Letter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fondo de corazones cayendo -->
+    <div class="hearts-background"></div>
+
+    <!-- Contenedor Principal (Ventana Estilo Retro) -->
+    <div class="window-wrapper">
+        <div class="window-header">
+            <span class="title">Me amas - 💌</span>
+            <div class="window-buttons">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+        </div>
+        
+        <div class="window-body" id="windowBody">
+            <!-- Imagen / GIF del gatito -->
+            <div class="cat-container">
+                <img id="catImg" src="https://media.giphy.com/media/3o7TKSjRrfIPjeiOkM/giphy.gif" alt="Cute Cat">
+            </div>
+
+            <!-- Pregunta -->
+            <h2 id="questionText">Me amas mucho bb?</h2>
+
+            <!-- Botones Sí / No -->
+            <div class="buttons" id="buttonGroup">
+                <button class="btn yes-btn" id="yesBtn">SI</button>
+                <button class="btn no-btn" id="noBtn">NO</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffe6eb;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Fondo con corazones sutiles */
+.hearts-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#ffb3c1 15%, transparent 16%), radial-gradient(#ffb3c1 15%, transparent 16%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Ventana principal estilo retro pixel art */
+.window-wrapper {
+    background: #fff0f3;
+    border: 4px solid #ff4d6d;
+    box-shadow: 8px 8px 0px #ffb3c1;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    position: relative;
+}
+
+.window-header {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.window-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+.red { background-color: #ff595e; }
+.yellow { background-color: #ffca3a; }
+.green { background-color: #8ac926; }
+
+.window-body {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cat-container img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+#questionText {
+    font-size: 11px;
+    color: #d90429;
+    line-height: 1.5;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    padding: 12px 24px;
+    font-size: 10px;
+    cursor: pointer;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 0.1s ease;
+}
+
+.btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
+}
+
+.yes-btn {
+    background-color: #ff758f;
+    color: white;
+}
+
+.no-btn {
+    background-color: #adb5bd;
+    color: white;
+    position: relative; 
+}
